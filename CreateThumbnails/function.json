@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "image/{name}",
+      "connection": "faasdemo01_STORAGE",
+      "dataType": "binary"
+    },
+    {
+      "type": "blob",
+      "name": "$return",
+      "path": "thumbnails/{name}",
+      "connection": "faasdemo01_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

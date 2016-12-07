@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "myEventHubMessage",
+      "direction": "in",
+      "path": "iothub-ehub-iotdemo099-89658-0850d09f66",
+      "connection": "iothub"
+    },
+    {
+      "type": "notificationHub",
+      "name": "notification",
+      "hubName": "faas",
+      "connection": "faas_NOTIFICATIONHUB",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

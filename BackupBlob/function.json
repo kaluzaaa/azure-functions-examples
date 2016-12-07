@@ -1,0 +1,26 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "input/{name}",
+      "connection": "faasdemo01_STORAGE"
+    },
+    {
+      "type": "blob",
+      "name": "myOutputBlob",
+      "path": "out/{name}",
+      "connection": "faasdemo01_STORAGE",
+      "direction": "out"
+    },
+    {
+      "type": "blob",
+      "name": "myInputBlob",
+      "path": "input/{name}",
+      "connection": "faasdemo01_STORAGE",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}
